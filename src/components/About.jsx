@@ -4,12 +4,12 @@ import Container from "react-bootstrap/Container";
 const About = () => {
   return (
     <div
-      className="bg-light text-dark py-5 d-flex flex-column align-items-center justify-content-center"
-      style={{ minHeight: "80vh" }}
+      className="bg-dark text-light py-5 d-flex flex-column align-items-center justify-content-center min-height"
+      style={{ marginTop: "80vh" }}
     >
       <Container className="text-center">
         <h1 className="display-4 my-5">About Me</h1>
-        <Container style={{ maxWidth: "600px" }}>
+        <Container style={{ maxWidth: "50%" }}>
           <p className="lead lh-lg">
             I'm currently a fourth-year student at Carleton University studying
             Computer Science. My love for math and problem-solving has always
