@@ -1,18 +1,18 @@
 .btn-flat {
-    background-color: red ;
-    color: white;
+    background-color: blue !important;
+    color: white !important;
 }
 
-.btn-flat:focus {
-    background-color: #3b7cff80;
+.btn-flat.active {
+    background-color: #3b7cff80 !important;
 }
 
-.btn-flat:hover:not(:focus) {
-    background-color: rgba(135, 207, 235, 0.703);
+.btn-flat:hover:not(.active) {
+    background-color: rgba(135, 207, 235, 0.703) !important;
 }
 
-.btn-flat:hover:focus {
-    background-color: #3b7cff80;
+.btn-flat.active:hover {
+    background-color: #3b7cff80 !important;
 }
 
 .cardinal{

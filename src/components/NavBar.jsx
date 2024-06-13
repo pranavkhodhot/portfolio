@@ -25,8 +25,8 @@ const NavBar = () => {
               </Offcanvas.Header>
               <Offcanvas.Body>
                 <Nav className="justify-content-end flex-grow-1 pe-3 gap-2">
-                  <Button variant="btn btn-outline-danger">Home</Button>
-                  <Button variant="btn btn-outline-danger">Projects</Button>
+                  <Button variant="btn btn-outline-primary">Home</Button>
+                  <Button variant="btn btn-outline-primary">Projects</Button>
                 </Nav>
               </Offcanvas.Body>
             </Navbar.Offcanvas>
