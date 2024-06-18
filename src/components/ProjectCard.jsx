@@ -6,7 +6,7 @@ const ProjectCard = (props) => {
     <Card className="mb-4 border-0">
       <Card.Img
         variant="top"
-        src={`/${props.details[0]}.png`}
+        src={`/projects/${props.details[0]}.png`}
         height={300}
         alt="Project Image"
       />

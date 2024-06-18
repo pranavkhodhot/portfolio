@@ -13,7 +13,7 @@ const About = () => {
         <Container style={{ maxWidth: "85%" }}>
           <Row className="align-items-center ms-1">
             <Col xs={12} sm={12} md={12} lg={12} xl={6} className="text-center mb-4 mb-md-0">
-              <img src="/public/pranavkhodhot.png" alt="Pranav Khodhot" className="w-100 rounded-circle"/>
+              <img src="/pranavkhodhot.png" alt="Pranav Khodhot" className="w-100 rounded-circle"/>
             </Col>
             <Col xs={12} sm={12} md={12} lg={12} xl={6}>
               <p className="lead lh-lg">

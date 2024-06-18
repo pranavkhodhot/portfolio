@@ -8,7 +8,7 @@ import '../App.css'; // Ensure this points to your CSS file
 
 const Technologies = () => {
   const technologies = [
-    ["React", "CSS", "Javascript", "Typescript", "Bootstrap", "TailwindCSS", "Vite", "Framer Motion", "SASS"],
+    ["React", "CSS", "Javascript", "Typescript", "Bootstrap", "Tailwind", "Vite", "Framer Motion", "SASS"],
     ["NodeJS", "Python", "ExpressJS", "AWS", "C", "C++", "Java"],
     ["Wordpress", "Webflow", "Figma", "Photoshop"],
     ["MongoDB", "MySQL"],
