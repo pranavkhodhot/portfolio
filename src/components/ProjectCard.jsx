@@ -3,7 +3,7 @@ import Card from "react-bootstrap/Card";
 
 const ProjectCard = (props) => {
   return (
-    <Card className="mb-4 border-0">
+    <Card className="mb-4 border-0 bg-dark text-white project-card" onClick={()=> window.open(props.details[4], "_blank")}>
       <Card.Img
         variant="top"
         src={`/projects/${props.details[0]}.png`}

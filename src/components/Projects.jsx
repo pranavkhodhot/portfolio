@@ -9,29 +9,33 @@ const Projects = () => {
       "Electronic Store Program",
       "March 2022 - April 2022",
       "This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.",
+      "https://github.com/pranavkhodhot/electronic-store-app",
     ],
     [
       "AED",
       "AED Simulation Program",
       "November 2023 - December 2023",
       "This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.",
+      "https://github.com/danielvlassov/COMP3004-AED-FINAL"
     ],
     [
       "Lyriks",
       "Lyriks Music Web App",
       "February 2024 - March 2024",
       "This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.",
+      "https://github.com/pranavkhodhot/rhythm-rise"
     ],
     [
       "BookList",
       "Book List Application",
       "March 2024 - April 2024",
       "This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.",
+      "https://github.com/pranavkhodhot/book-store-application"
     ]
   ];
   return (
     <div
-      className="bg-dark text-light py-5 my-5 d-flex flex-column align-items-center justify-content-center"
+      className="py-5 my-5 d-flex flex-column align-items-center justify-content-center"
       style={{ minHeight: "80vh" }}
     >
       <Container className="text-center">

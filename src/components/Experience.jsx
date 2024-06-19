@@ -23,19 +23,12 @@ const Experience = () => {
       description: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut voluptatum eius sapiente, totam reiciendis temporibus qui quibusdam, recusandae sit vero unde, sed, incidunt et ea quo dolore laudantium consectetur!",
       inverted: false,
     },
-    {
-      image: "/icons/Tailwind.svg",
-      date: "2009-2011",
-      title: "Our Humble Beginnings",
-      description: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut voluptatum eius sapiente, totam reiciendis temporibus qui quibusdam, recusandae sit vero unde, sed, incidunt et ea quo dolore laudantium consectetur!",
-      inverted: true,
-    },
   ];
 
   return (
     <section className="page-section">
-      <h1 className="display-4 text-center mb-2 pt-5 text-light">Experiences</h1>
-      <h6 className="text-white-50 text-center mb-5">For more details you can look on my Resume/CV</h6>
+      <h1 className="display-4 text-center mb-2 pt-5">Experiences</h1>
+      <h6 className="text-black-50 text-center mb-5">For more details you can look on my Resume/CV</h6>
       <div className="container">
         <ExperienceList experiences={experiences} />
       </div>

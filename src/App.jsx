@@ -5,12 +5,11 @@ import Technologies from './components/Technologies'
 import Projects from './components/Projects'
 import Experience from './components/Experience'
 import "./App.css"
-import SplineTest from './components/SplineTest'
 function App() {
 
   return (
     <>
-      <div className='root bg-dark'>
+      <div className='root'>
         <NavBar/>
         <Hero/>
         <About/>

@@ -9,9 +9,9 @@ const NavBar = () => {
   return (
     <>
       {['lg'].map((expand) => (
-        <Navbar key={expand} expand={expand} className="bg-dark">
+        <Navbar key={expand} expand={expand} className="bg">
           <Container fluid>
-            <Navbar.Brand href="#" className='ms-3 text-white'>Pranav Khodhot</Navbar.Brand>
+            <Navbar.Brand href="#" className='ms-3 text-black'>Pranav Khodhot</Navbar.Brand>
             <Navbar.Toggle aria-controls={`offcanvasNavbar-expand-${expand}`} />
             <Navbar.Offcanvas
               id={`offcanvasNavbar-expand-${expand}`}

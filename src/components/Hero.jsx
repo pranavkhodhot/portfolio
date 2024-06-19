@@ -1,20 +1,29 @@
-import React from 'react';
-import Button from 'react-bootstrap/Button';
-import Container from 'react-bootstrap/Container';
-import SplineTest from './SplineTest';
+import React from "react";
+import Button from "react-bootstrap/Button";
+import Container from "react-bootstrap/Container";
+import { motion } from "framer-motion";
 
 const Hero = () => {
   return (
     <>
-    <div className="text-light py-5 d-flex flex-column align-items-center justify-content-center" style={{ minHeight: '80vh', width: '100%' }}>
-      <Container className="text-center">
-        <h1 className="display-4"><strong>Pranav Khodhot</strong></h1>
-        <p className="lead">A full stack software engineer and web designer</p>
-        <Button variant="primary" href="/path/to/your/resume.pdf" download>
-          Download My Resume
-        </Button>
-      </Container>
-    </div>
+      <motion.div
+        className="bg py-5 d-flex flex-column align-items-center justify-content-center overflow-hidden"
+        style={{ minHeight: "90vh", width: "100%" }}
+      >
+        <Container className="text-center" as={motion.div} initial={{ opacity: 0, y: 100 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ duration: 1, ease: "easeOut", delay: 0.2 }}>
+          <h1 className="display-4">
+            <strong>Hello, I'm Pranav Khodhot</strong>
+          </h1>
+          <p className="lead">
+            A full stack software engineer and web designer
+          </p>
+          <Button variant="primary" href="/path/to/your/resume.pdf" download>
+            Download My Resume
+          </Button>
+        </Container>
+      </motion.div>
     </>
   );
 };

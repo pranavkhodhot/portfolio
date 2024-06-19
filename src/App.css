@@ -65,7 +65,7 @@
     min-height: 80px;
 }
 
-.lineime li:before,
+.linetime li:before,
 .linetime li:after {
     display: table;
     content: "";
@@ -96,6 +96,17 @@
     transform: translateY(-50%);
 }
 
+.bg {
+    background-image: url("../public/bg.png");
+    background-size: cover;
+    height: 100%;
+}
+
+.project-card:hover {
+    opacity:0.5;
+    cursor: pointer;
+}
+
 @media (min-width: 768px) {
 
     /* khunng chính (ul)*/
@@ -121,7 +132,7 @@
         left: 50%;
         transform: translateX(-48%);
         width: 120px;
-        height: 120px;
+        height: 120px; 
     }
 
     .linetime-img h4 {

@@ -8,14 +8,14 @@ const ExperienceItem = ({ image, date, title, description, inverted }) => {
         <img src={image} alt={title} className="img-fluid" />
       </div>
       <div className={`linetime-panel ${inverted ? "inverted" : ""}`}>
-        <div className="linetime-panel-heading text-white">
+        <div className="linetime-panel-heading">
           <h2>{date}</h2>
         </div>
-        <div className="linetime-panel-subheading text-white">
+        <div className="linetime-panel-subheading">
           <h2>{title}</h2>
         </div>
         <div className="linetime-panel-content">
-          <p className="text-white">{description}</p>
+          <p>{description}</p>
         </div>
       </div>
     </li>

@@ -37,9 +37,9 @@ const Technologies = () => {
 
   return (
     <div className=''>
-      <h1 className="display-4 text-center mt-1 pt-5 text-light">Technologies</h1>
+      <h1 className="display-4 text-center mt-1 pt-5">Technologies</h1>
       <Container
-        className="d-flex justify-content-center flex-column text-light my-5"
+        className="d-flex justify-content-center flex-column my-5"
         style={{ maxWidth: "60%" }}
       >
         <ButtonGroup variant="flat" className="d-flex flex-wrap justify-content-center gap-2 mb-5">
