@@ -10,7 +10,7 @@ function App() {
 
   return (
     <>
-      <div className='root'>
+      <div className='root text-light'>
         <ParticlesBackground />
         <NavBar/>
         <Hero/>

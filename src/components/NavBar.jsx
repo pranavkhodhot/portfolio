@@ -10,7 +10,7 @@ const NavBar = () => {
     <> 
       <Navbar expand="lg">
         <Container fluid>
-          <Navbar.Brand href="#" className='ms-3 text-black'>Pranav Khodhot</Navbar.Brand>
+          <Navbar.Brand href="#" className='ms-3 text-light'>Pranav Khodhot</Navbar.Brand>
           <Navbar.Toggle aria-controls="navbar-nav" />
           <Navbar.Collapse id="navbar-nav">
             <Nav className="justify-content-end flex-grow-1 pe-3 gap-2">
