@@ -6,11 +6,10 @@ import { motion } from "framer-motion";
 const Hero = () => {
   return (
     <>
-      <motion.div
-        className="bg py-5 d-flex flex-column align-items-center justify-content-center overflow-hidden"
-        style={{ minHeight: "90vh", width: "100%" }}
+      <div
+        className="py-5 d-flex flex-column align-items-center justify-content-center w-100 min-vh-100"
       >
-        <Container className="text-center" as={motion.div} initial={{ opacity: 0, y: 100 }}
+        <Container className="text-center z-1" as={motion.div} initial={{ opacity: 0, y: 100 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 1, ease: "easeOut", delay: 0.2 }}>
           <h1 className="display-4">
@@ -23,7 +22,7 @@ const Hero = () => {
             Download My Resume
           </Button>
         </Container>
-      </motion.div>
+      </div>
     </>
   );
 };

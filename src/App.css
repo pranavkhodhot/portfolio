@@ -1,164 +1,179 @@
+/* Reset and Base Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.app {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+}
+
+/* Button Styles */
 .btn-flat {
-    background-color: blue !important;
-    color: white !important;
+  background-color: blue !important;
+  color: white !important;
 }
 
 .btn-flat.active {
-    background-color: #3b7cff80 !important;
-}
-
-.btn-flat:hover:not(.active) {
-    background-color: rgba(135, 207, 235, 0.703) !important;
+  background-color: #3b7cff80 !important;
 }
 
 .btn-flat.active:hover {
-    background-color: #3b7cff80 !important;
+  background-color: #3b7cff80 !important;
 }
 
-.cardinal{
-    background-color: rgba(100, 116, 139, 0.1)
+.btn-flat:hover:not(.active) {
+  background-color: rgba(135, 207, 235, 0.703) !important;
+}
+
+/* Cardinal Styles */
+.cardinal {
+  background-color: rgba(100, 116, 139, 0.1);
 }
 
 .cardinal:hover {
-    background-color: #345de159;
+  background-color: #345de159;
 }
 
-.min-height {
-    min-height: 100vh;
-}
-
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-/* khung cover */
-.page-section {
-    padding: 7.5rem 0;
-}
-
-/* khunng chính (ul)*/
+/* Linetime Styles */
 .linetime {
-    position: relative;
-    list-style: none;
-    margin: 0;
-    padding: 0;
+  position: relative;
+  list-style: none;
+  margin: 0;
+  padding: 0;
 }
 
 .linetime:before {
-    content: "";
-    top: 0;
-    left: 40px;
-    height: 100%;
-    width: 2px;
-    background-color: black;
-    border: 1px solid gray;
-    position: absolute;
-    margin-left: 1px;
+  content: "";
+  top: 0;
+  left: 40px;
+  height: 100%;
+  width: 2px;
+  background-color: black;
+  border: 1px solid gray;
+  position: absolute;
+  margin-left: 1px;
 }
 
-/* khung nội dung (li)*/
 .linetime li {
-    position: relative;
-    margin-bottom: 2rem;
-    min-height: 80px;
+  position: relative;
+  margin-bottom: 2rem;
+  min-height: 80px;
 }
 
 .linetime li:before,
 .linetime li:after {
-    display: table;
-    content: "";
+  display: table;
+  content: "";
 }
 
 .linetime li:after {
-    clear: both;
-}
-
-.linetime-panel {
-    position: relative;
-    padding-left: 100px;
+  clear: both;
 }
 
 .linetime-img {
-    position: absolute;
-    width: 80px;
-    height: 80px;
-    border: 6px solid #000;
-    overflow: hidden;
-    background: #000;
-    color: #fff;
+  position: absolute;
+  width: 80px;
+  height: 80px;
+  border: 6px solid #000;
+  overflow: hidden;
+  background: #000;
+  color: #fff;
 }
 
 .linetime-img h4 {
-    font-size: .8rem;
-    margin-top: 50%;
-    transform: translateY(-50%);
+  font-size: 0.8rem;
+  margin-top: 50%;
+  transform: translateY(-50%);
 }
 
-.bg {
-    background-image: url("../public/bg.png");
-    background-size: cover;
-    height: 100%;
+.linetime-panel {
+  position: relative;
+  padding-left: 100px;
+}
+
+.min-height {
+  min-height: 100vh;
+}
+
+.navbar {
+  position: relative;
+  z-index: 1;
+}
+
+.page-section {
+  padding: 7.5rem 0;
 }
 
 .project-card:hover {
-    opacity:0.5;
-    cursor: pointer;
+  opacity: 0.5;
+  cursor: pointer;
 }
 
+#tsparticles {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+}
+
+/* Media Queries */
 @media (min-width: 768px) {
+  .linetime:before {
+    left: 50%;
+  }
 
-    /* khunng chính (ul)*/
-    .linetime:before {
-        left: 50%;
-    }
+  .linetime li {
+    position: relative;
+    margin-bottom: 2rem;
+    min-height: 50px;
+  }
 
-    /* khung nội dung (li)*/
-    .linetime li {
-        position: relative;
-        margin-bottom: 2rem;
-        min-height: 50px;
-    }
+  .linetime-panel {
+    width: 40%;
+    padding: 0;
+    float: left;
+    text-align: right;
+  }
 
-    .linetime-panel {
-        width: 40%;
-        padding: 0;
-        float: left;
-        text-align: right;
-    }
+  .linetime-img {
+    left: 50%;
+    transform: translateX(-48%);
+    width: 120px;
+    height: 120px;
+  }
 
-    .linetime-img {
-        left: 50%;
-        transform: translateX(-48%);
-        width: 120px;
-        height: 120px; 
-    }
+  .linetime-img h4 {
+    font-size: 1rem;
+  }
 
-    .linetime-img h4 {
-        font-size: 1rem;
-    }
-
-    .inverted {
-        float: right;
-        text-align: left;
-    }
+  .inverted {
+    float: right;
+    text-align: left;
+  }
 }
+
 @media (min-width: 992px) {
-    /* khung nội dung (li)*/
-    .linetime li {
-        position: relative;
-        margin-bottom: 4rem;
-        min-height: 50px;
-    }
-    .linetime-img {
-        width: 170px;
-        height: 170px;
-    }
-    .linetime-img h4 {
-        font-size: calc(1.275rem + 0.3vw);
-    }
-    .linetime-panel {
-        padding: 0 1.25rem;
-    }
+  .linetime li {
+    position: relative;
+    margin-bottom: 4rem;
+    min-height: 50px;
+  }
+
+  .linetime-img {
+    width: 170px;
+    height: 170px;
+  }
+
+  .linetime-img h4 {
+    font-size: calc(1.275rem + 0.3vw);
+  }
+
+  .linetime-panel {
+    padding: 0 1.25rem;
+  }
 }

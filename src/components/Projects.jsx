@@ -1,6 +1,6 @@
 import React from "react";
 import Container from "react-bootstrap/Container";
-import ProjectCard from "./ProjectCard";
+import ProjectCard from "./subcomponents/ProjectCard";
 import { Col, Row } from "react-bootstrap";
 const Projects = () => {
   const projects = [
@@ -35,7 +35,7 @@ const Projects = () => {
   ];
   return (
     <div
-      className="py-5 my-5 d-flex flex-column align-items-center justify-content-center"
+      className="py-5 my-5 d-flex flex-column align-items-center justify-content-center position-relative z-1"
       style={{ minHeight: "80vh" }}
     >
       <Container className="text-center">

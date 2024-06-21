@@ -1,5 +1,5 @@
 import React from "react";
-import ExperienceList from './ExperienceList'
+import ExperienceList from './subcomponents/ExperienceList'
 const Experience = () => {
   const experiences = [
     {
@@ -26,7 +26,7 @@ const Experience = () => {
   ];
 
   return (
-    <section className="page-section">
+    <section className="page-section position-relative z-1">
       <h1 className="display-4 text-center mb-2 pt-5">Experiences</h1>
       <h6 className="text-black-50 text-center mb-5">For more details you can look on my Resume/CV</h6>
       <div className="container">

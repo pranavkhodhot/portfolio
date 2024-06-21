@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import Card from "./Card";
+import Card from "./subcomponents/Card";
 import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
@@ -36,7 +36,7 @@ const Technologies = () => {
   };
 
   return (
-    <div className=''>
+    <div className='position-relative z-1'>
       <h1 className="display-4 text-center mt-1 pt-5">Technologies</h1>
       <Container
         className="d-flex justify-content-center flex-column my-5"
