@@ -8,28 +8,28 @@ const Projects = () => {
       "ElectronicStore",
       "Electronic Store Program",
       "March 2022 - April 2022",
-      "This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.",
+      "Simulated electronic store transactions using Java and JavaFX, incorporating OOP principles like inheritance and polymorphism to enhance reusability and maintainability",
       "https://github.com/pranavkhodhot/electronic-store-app",
     ],
     [
       "AED",
       "AED Simulation Program",
       "November 2023 - December 2023",
-      "This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.",
+      "Simulated the AED process using Qt Creator and C++, employing Go4 Design Patterns to ensure robust architecture and design",
       "https://github.com/danielvlassov/COMP3004-AED-FINAL"
     ],
     [
       "Lyriks",
       "Lyriks Music Web App",
       "February 2024 - March 2024",
-      "This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.",
+      "Developed a Spotify clone using React and Tailwind, integrated with ShazamCore API for music data, and utilized Redux for state management",
       "https://github.com/pranavkhodhot/rhythm-rise"
     ],
     [
       "BookList",
       "Book List Application",
       "March 2024 - April 2024",
-      "This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.",
+      "Created a full-stack bookstore application with CRUD operations, featuring a React front end and an Express.js and MongoDB backend for seamless user experience.",
       "https://github.com/pranavkhodhot/book-store-application"
     ]
   ];

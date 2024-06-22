@@ -1,27 +1,24 @@
-import React from 'react'
-import Button from 'react-bootstrap/Button';
-import Container from 'react-bootstrap/Container';
-import Nav from 'react-bootstrap/Nav';
-import Navbar from 'react-bootstrap/Navbar';
-import Offcanvas from 'react-bootstrap/Offcanvas';
+import React from 'react';
+import { Navbar, Nav, Container } from 'react-bootstrap';
 
 const NavBar = () => {
   return (
     <> 
       <Navbar expand="lg">
         <Container fluid>
-          <Navbar.Brand href="#" className='ms-3 text-light'>Pranav Khodhot</Navbar.Brand>
           <Navbar.Toggle aria-controls="navbar-nav" />
-          <Navbar.Collapse id="navbar-nav">
-            <Nav className="justify-content-end flex-grow-1 pe-3 gap-2">
-              <Button variant="btn btn-outline-primary">Home</Button>
-              <Button variant="btn btn-outline-primary">Projects</Button>
+          <Navbar.Collapse id="navbar-nav" className="justify-content-center">
+            <Nav className="gap-2">
+              <Nav.Link href="#about-me" className="text-light">About Me</Nav.Link>
+              <Nav.Link href="#technologies" className="text-light">Technologies</Nav.Link>
+              <Nav.Link href="#projects" className="text-light">Projects</Nav.Link>
+              <Nav.Link href="#experience" className="text-light">Experience</Nav.Link>
             </Nav>
           </Navbar.Collapse>
         </Container>
       </Navbar>
     </>
-  )
+  );
 }
 
-export default NavBar
+export default NavBar;
