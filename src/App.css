@@ -5,6 +5,7 @@
   box-sizing: border-box;
 }
 
+
 .app {
   position: relative;
   width: 100%;
@@ -14,7 +15,7 @@
 
 /* Button Styles */
 .btn-flat {
-  background-color: blue !important;
+  background-color: rgb(93, 93, 241) !important;
   color: white !important;
 }
 
@@ -37,10 +38,6 @@
 
 .cardinal:hover {
   background-color: #345de159;
-}
-
-html {
-  scroll-behavior: smooth;
 }
 
 /* Linetime Styles */
@@ -116,6 +113,13 @@ html {
 .project-card:hover {
   opacity: 0.5;
   cursor: pointer;
+}
+
+span {
+  font-size: 72px;
+  background: -webkit-linear-gradient(#eee, #333);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 #tsparticles {

@@ -2,7 +2,6 @@ import React from "react";
 import Container from "react-bootstrap/Container";
 import ProjectCard from "./subcomponents/ProjectCard";
 import { Col, Row } from "react-bootstrap";
-import Example from "./subcomponents/TiltCard";
 const Projects = () => {
   const projects = [
     [
