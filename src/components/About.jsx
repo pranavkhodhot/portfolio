@@ -8,10 +8,7 @@ const About = () => {
   return (
     <div
       className="py-5 d-flex flex-column align-items-center justify-content-center min-height my-5 position-relative z-1"
-      initial={{ opacity: 0, y: 100 }}
-      whileInView={{ opacity: 1, y: 0 }}
-      transition={{ duration: 1, ease: "easeOut", delay: 0.2 }}
-      viewport={{ once: true }}
+      id="about-me"
     >
       <Container
         as={motion.div}
@@ -20,7 +17,7 @@ const About = () => {
         transition={{ duration: 1, ease: "easeOut", delay: 0.2 }}
         viewport={{ once: true }}
       >
-        <h1 className="display-4 my-5 text-center">About Me</h1>
+        <h1 className="display-4 my-5 text-center font-weight-800 fw-bold">About Me</h1>
         <Container style={{ maxWidth: "85%" }}>
           <Row className="align-items-center ms-1">
             <Col

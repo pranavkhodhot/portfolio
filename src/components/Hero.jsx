@@ -12,7 +12,7 @@ const Hero = () => {
         <Container className="text-center z-1 pb-5" as={motion.div} initial={{ opacity: 0, y: 100 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 1, ease: "easeOut", delay: 0.2 }}>
-          <h1 className="display-4">
+          <h1 className="display-1 fw-bold">
             <strong>Hello, I'm Pranav Khodhot</strong>
           </h1>
           <p className="lead">

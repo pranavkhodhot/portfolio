@@ -2,6 +2,7 @@ import React from "react";
 import Container from "react-bootstrap/Container";
 import ProjectCard from "./subcomponents/ProjectCard";
 import { Col, Row } from "react-bootstrap";
+import Example from "./subcomponents/TiltCard";
 const Projects = () => {
   const projects = [
     [
@@ -37,9 +38,10 @@ const Projects = () => {
     <div
       className="py-5 my-5 d-flex flex-column align-items-center justify-content-center position-relative z-1"
       style={{ minHeight: "80vh" }}
+      id="projects"
     >
       <Container className="text-center">
-        <h1 className="display-4 my-5">Feature Projects</h1>
+        <h1 className="display-4 my-5 fw-bold">Feature Projects</h1>
         <Row xs={1} md={2} className="g-4">
           {projects.map((_, idx) => (
             <Col key={idx}>

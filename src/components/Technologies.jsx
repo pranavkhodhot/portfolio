@@ -36,8 +36,8 @@ const Technologies = () => {
   };
 
   return (
-    <div className='position-relative z-1'>
-      <h1 className="display-4 text-center mt-1 pt-5">Technologies</h1>
+    <div className='position-relative z-1' id='technologies'>
+      <h1 className="display-4 text-center mt-1 pt-5 fw-bold">Technologies</h1>
       <Container
         className="d-flex justify-content-center flex-column my-5"
         style={{ maxWidth: "60%" }}
@@ -55,7 +55,7 @@ const Technologies = () => {
           ))}
         </ButtonGroup>
         <Row className="g-4">
-          {cardItems.map((name, index) => (
+          {cardItems.sort().map((name, index) => (
             <Col
               key={index}
               xs={6}
