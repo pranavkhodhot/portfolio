@@ -15,23 +15,23 @@ const Projects = () => {
       "AED",
       "AED Simulation Program",
       "November 2023 - December 2023",
-      "Simulated the AED process using Qt Creator and C++, employing Go4 Design Patterns to ensure robust architecture and design",
-      "https://github.com/danielvlassov/COMP3004-AED-FINAL"
+      "Simulated the AED process using Qt Creator and C++, employing Gang of Four Design Patterns to ensure robust architecture and design with GUI design",
+      "https://github.com/danielvlassov/COMP3004-AED-FINAL",
     ],
     [
       "Lyriks",
       "Lyriks Music Web App",
       "February 2024 - March 2024",
       "Developed a Spotify clone using React and Tailwind, integrated with ShazamCore API for music data, and utilized Redux for state management",
-      "https://github.com/pranavkhodhot/rhythm-rise"
+      "https://github.com/pranavkhodhot/rhythm-rise",
     ],
     [
       "BookList",
       "Book List Application",
       "March 2024 - April 2024",
       "Created a full-stack bookstore application with CRUD operations, featuring a React front end and an Express.js and MongoDB backend for seamless user experience.",
-      "https://github.com/pranavkhodhot/book-store-application"
-    ]
+      "https://github.com/pranavkhodhot/book-store-application",
+    ],
   ];
   return (
     <div
@@ -43,8 +43,10 @@ const Projects = () => {
         <h1 className="display-4 my-5 fw-bold">Feature Projects</h1>
         <Row xs={1} md={2} className="g-4">
           {projects.map((_, idx) => (
-            <Col key={idx}>
-              <ProjectCard details={projects[idx]}/>
+            <Col key={idx} className="d-flex">
+              <div className="box-wrapper">
+                <ProjectCard details={projects[idx]} />
+              </div>
             </Col>
           ))}
         </Row>

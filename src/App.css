@@ -112,12 +112,23 @@
 
 .project-card:hover {
   opacity: 0.5;
+  transition-duration: 0.5s;
   cursor: pointer;
+}
+
+.box-wrapper {
+  position: relative;
+  background: linear-gradient(to right, red, purple);
+  padding: 4px;
+  border-radius: 5px;
+  box-shadow: 0 0 15px 5px rgba(255, 0, 0, 0.5);
+  display: flex; /* Make .box-wrapper a flex container */
+  flex: 1; /* Allow it to grow and fill the space */
 }
 
 span {
   font-size: 72px;
-  background: -webkit-linear-gradient(#eee, #333);
+  background: -webkit-linear-gradient(red, purple);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
