@@ -17,7 +17,7 @@ const Hero = () => {
           <h6 className="lead pb-2">
             A software developer and web designer
           </h6>
-          <Button variant="primary" href="/path/to/your/resume.pdf" download>
+          <Button variant="primary" href="/Pranav_Khodhot___Resume.pdf" download>
             Download My Resume
           </Button>
         </Container>
