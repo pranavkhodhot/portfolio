@@ -15,7 +15,7 @@ const Hero = () => {
             Hello, I'm <span>Pranav Khodhot</span>
           </h1>
           <h6 className="lead pb-2">
-            A full stack software engineer and web designer
+            A software developer and web designer
           </h6>
           <Button variant="primary" href="/path/to/your/resume.pdf" download>
             Download My Resume

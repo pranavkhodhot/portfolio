@@ -5,7 +5,6 @@
   box-sizing: border-box;
 }
 
-
 .app {
   position: relative;
   width: 100%;
@@ -127,7 +126,6 @@
 }
 
 span {
-  font-size: 72px;
   background: -webkit-linear-gradient(red, purple);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;

@@ -10,6 +10,7 @@ const ExperienceList = ({ experiences }) => {
         image={experience.image}
         date={experience.date}
         title={experience.title}
+        companyName={experience.companyName}
         description={experience.description}
         inverted={experience.inverted}
       />

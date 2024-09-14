@@ -4,23 +4,26 @@ const Experience = () => {
   const experiences = [
     {
       image: "/icons/Bayshore.svg",
-      date: "Jan 2024 - Present",
-      title: "Front-end Developer",
-      description: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut voluptatum eius sapiente, totam reiciendis temporibus qui quibusdam, recusandae sit vero unde, sed, incidunt et ea quo dolore laudantium consectetur!",
+      date: "Jan 2024 - August 2024",
+      title: "Web Developer Intern",
+      companyName: "Bayshore Healthcare",
+      description: "Contributed to front-end development, user interface design, and website creation leading to improving project functionality and overall user experience.",
       inverted: false,
     },
     {
       image: "icons/Bayshore.svg",
       date: "May 2023 - August 2023",
       title: "QA Intern",
-      description: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut voluptatum eius sapiente, totam reiciendis temporibus qui quibusdam, recusandae sit vero unde, sed, incidunt et ea quo dolore laudantium consectetur!",
+      companyName: "Bayshore Healthcare",
+      description: "Developed automated testing solutions to enhance project stability and data integrity. Integrated secure data management processes and contributed to improving front-end validation and workflow efficiency.",
       inverted: true,
     },
     {
       image: "/icons/Bayshore.svg",
       date: "May 2022 - August 2022",
-      title: "Software Intern",
-      description: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut voluptatum eius sapiente, totam reiciendis temporibus qui quibusdam, recusandae sit vero unde, sed, incidunt et ea quo dolore laudantium consectetur!",
+      title: "Software Developer Intern",
+      companyName: "Bayshore Healthcare",
+      description: "Contributed to front-end design and back-end testing, improving user communication and system functionality. Collaborated with teams to streamline project management and enhance development efficiency.",
       inverted: false,
     },
   ];
@@ -28,9 +31,13 @@ const Experience = () => {
   return (
     <section className="page-section position-relative z-1" id="experience">
       <h1 className="display-4 text-center mb-2 pt-5">Experiences</h1>
-      <h6 className="text-black-50 text-center mb-5">For more details you can look on my Resume/CV</h6>
+      <h6 className="text-secondary text-center mb-5">
+        <span><small>For more details you can look on my Resume/CV</small></span>
+      </h6>
       <div className="container">
-        <ExperienceList experiences={experiences} />
+        <div className="horizontal-scroll">
+          <ExperienceList experiences={experiences} />
+        </div>
       </div>
     </section>
   );

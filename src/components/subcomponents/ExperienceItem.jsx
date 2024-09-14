@@ -1,7 +1,7 @@
 import React from "react";
 
 
-const ExperienceItem = ({ image, date, title, description, inverted }) => {
+const ExperienceItem = ({ image, date, title, companyName, description, inverted }) => {
     return (
         <li>
       <div className={`linetime-img rounded-circle ${inverted ? "order-last" : ""}`}>
@@ -12,7 +12,10 @@ const ExperienceItem = ({ image, date, title, description, inverted }) => {
           <h2>{date}</h2>
         </div>
         <div className="linetime-panel-subheading">
-          <h2>{title}</h2>
+          <h3>{title}</h3>
+        </div>
+        <div className="linetime-panel-subheading text-secondary">
+          <h4>{companyName}</h4>
         </div>
         <div className="linetime-panel-content">
           <p>{description}</p>

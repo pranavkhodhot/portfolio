@@ -17,7 +17,9 @@ const About = () => {
         transition={{ duration: 1, ease: "easeOut", delay: 0.2 }}
         viewport={{ once: true }}
       >
-        <h1 className="display-4 my-5 text-center font-weight-800 fw-bold">About Me</h1>
+        <h1 className="display-4 my-5 text-center font-weight-800 fw-bold">
+          About Me
+        </h1>
         <Container style={{ maxWidth: "85%" }}>
           <Row className="align-items-center ms-1">
             <Col
@@ -36,16 +38,19 @@ const About = () => {
             </Col>
             <Col xs={12} sm={12} md={12} lg={12} xl={6}>
               <p className="lead lh-lg">
-                I'm currently a fourth-year student at Carleton University
+                I’m currently a fourth-year student at Carleton University
                 studying Computer Science. My love for math and problem-solving
-                has always driven me, but there's another realm that equally
-                captures my interest — the digital world. I've been immersing
-                myself in coding ever since high school, starting with Python
-                (Automation, Web Scraping, GUI, Pen Testing), and then delving
-                into web development, mastering technologies such as HTML, CSS,
-                and JavaScript. Nowadays, I spend most of my coding time
-                crafting full-stack applications, blending my passion for
-                logical challenges with creative solutions in the web space.
+                has always driven me, providing a foundation for logical
+                thinking and analytical skills. At the same time, I have a deep
+                appreciation for creativity and its role in technology. This
+                dual passion led me to the world of programming, where I started
+                my journey with Python. From automating tasks and web scraping
+                to building GUI applications, Python became my playground for
+                blending logic and creativity. In addition to Python, I have
+                ventured into web development, creating small websites using
+                HTML, CSS, and JavaScript. These projects have allowed me to
+                combine my problem-solving skills with my creative flair,
+                crafting interactive and visually appealing web experiences.
               </p>
             </Col>
           </Row>
