@@ -37,20 +37,14 @@ const About = () => {
               />
             </Col>
             <Col xs={12} sm={12} md={12} lg={12} xl={6}>
-              <p className="lead lh-lg">
-                I’m currently a fourth-year student at Carleton University
-                studying Computer Science. My love for math and problem-solving
-                has always driven me, providing a foundation for logical
-                thinking and analytical skills. At the same time, I have a deep
-                appreciation for creativity and its role in technology. This
-                dual passion led me to the world of programming, where I started
-                my journey with Python. From automating tasks and web scraping
-                to building GUI applications, Python became my playground for
-                blending logic and creativity. In addition to Python, I have
-                ventured into web development, creating small websites using
-                HTML, CSS, and JavaScript. These projects have allowed me to
-                combine my problem-solving skills with my creative flair,
-                crafting interactive and visually appealing web experiences.
+              <p className="lead lh-lg mt-5">
+                I'm a passionate software developer with a strong focus on
+                creating efficient, user-friendly web applications. With
+                experience in both front-end and back-end development, I enjoy
+                bringing design concepts to life and solving complex technical
+                challenges. I’m continuously learning and expanding my skills,
+                always striving to build innovative solutions that enhance user
+                experiences
               </p>
             </Col>
           </Row>

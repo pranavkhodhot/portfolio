@@ -108,7 +108,7 @@ const Technologies = () => {
           initial="initial"
           whileInView="animate"
           variants={hasScrolled ? {} : containerStaggeredAnimation}
-          key={activeButton} // Ensure Row remounts when activeButton changes
+          key={activeButton}
           viewport={{ once: true, amount: 0.2 }}
           onViewportEnter={() => setHasScrolled(true)}
         >

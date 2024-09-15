@@ -9,7 +9,7 @@ const ExperienceItem = ({ image, date, title, companyName, description, inverted
       </div>
       <div className={`linetime-panel ${inverted ? "inverted" : ""}`}>
         <div className="linetime-panel-heading">
-          <h2>{date}</h2>
+          <h4>{date}</h4>
         </div>
         <div className="linetime-panel-subheading">
           <h3>{title}</h3>
