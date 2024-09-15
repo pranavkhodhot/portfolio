@@ -29,7 +29,7 @@ const Experience = () => {
   ];
 
   return (
-    <section className="page-section position-relative z-1" id="experience">
+    <section className="position-relative z-1" id="experience">
       <h1 className="display-4 text-center mb-2 pt-5">Experiences</h1>
       <h6 className="text-secondary text-center mb-5">
         <span>For more details you can look on my <u><a href="/Pranav_Khodhot___Resume.pdf" download>Resume/CV</a></u></span>
@@ -39,6 +39,7 @@ const Experience = () => {
           <ExperienceList experiences={experiences} />
         </div>
       </div>
+      <p className="text-center pt-5">&copy; 2024 Pranav Khodhot. All rights reserved.</p>
     </section>
   );
 };
