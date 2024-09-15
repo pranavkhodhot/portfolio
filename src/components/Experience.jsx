@@ -3,7 +3,7 @@ import ExperienceList from './subcomponents/ExperienceList'
 const Experience = () => {
   const experiences = [
     {
-      image: "/icons/Bayshore.svg",
+      image: "/icons/Bayshore.jpeg",
       date: "Jan 2024 - August 2024",
       title: "Web Developer Intern",
       companyName: "Bayshore Healthcare",
@@ -11,7 +11,7 @@ const Experience = () => {
       inverted: false,
     },
     {
-      image: "icons/Bayshore.svg",
+      image: "/icons/Bayshore.jpeg",
       date: "May 2023 - August 2023",
       title: "QA Intern",
       companyName: "Bayshore Healthcare",
@@ -19,7 +19,7 @@ const Experience = () => {
       inverted: true,
     },
     {
-      image: "/icons/Bayshore.svg",
+      image: "/icons/Bayshore.jpeg",
       date: "May 2022 - August 2022",
       title: "Software Developer Intern",
       companyName: "Bayshore Healthcare",
@@ -32,7 +32,7 @@ const Experience = () => {
     <section className="page-section position-relative z-1" id="experience">
       <h1 className="display-4 text-center mb-2 pt-5">Experiences</h1>
       <h6 className="text-secondary text-center mb-5">
-        <span><small>For more details you can look on my Resume/CV</small></span>
+        <span>For more details you can look on my <u><a href="/Pranav_Khodhot___Resume.pdf" download>Resume/CV</a></u></span>
       </h6>
       <div className="container">
         <div className="horizontal-scroll">
