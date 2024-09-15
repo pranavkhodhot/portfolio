@@ -3,7 +3,7 @@ import ExperienceList from './subcomponents/ExperienceList'
 const Experience = () => {
   const experiences = [
     {
-      image: "/icons/Bayshore.jpeg",
+      image: "icons/Bayshore.jpeg",
       date: "Jan 2024 - August 2024",
       title: "Web Developer Intern",
       companyName: "Bayshore Healthcare",
@@ -11,7 +11,7 @@ const Experience = () => {
       inverted: false,
     },
     {
-      image: "/icons/Bayshore.jpeg",
+      image: "icons/Bayshore.jpeg",
       date: "May 2023 - August 2023",
       title: "QA Intern",
       companyName: "Bayshore Healthcare",
@@ -19,7 +19,7 @@ const Experience = () => {
       inverted: true,
     },
     {
-      image: "/icons/Bayshore.jpeg",
+      image: "icons/Bayshore.jpeg",
       date: "May 2022 - August 2022",
       title: "Software Developer Intern",
       companyName: "Bayshore Healthcare",

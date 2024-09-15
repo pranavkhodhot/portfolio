@@ -6,7 +6,7 @@ const ProjectCard = (props) => {
     <Card className="flex-fill border-0 bg-dark text-white project-card d-flex flex-column" onClick={() => window.open(props.details[4], "_blank")}>
       <Card.Img
         variant="top"
-        src={`/projects/${props.details[0]}.png`}
+        src={`projects/${props.details[0]}.png`}
         height={300}
         alt="Project Image"
       />

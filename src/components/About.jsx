@@ -31,7 +31,7 @@ const About = () => {
               className="text-center mb-4 mb-md-0"
             >
               <img
-                src="/pranavkhodhot.png"
+                src="pranavkhodhot.png"
                 alt="Pranav Khodhot"
                 className="w-75 rounded-circle"
               />
