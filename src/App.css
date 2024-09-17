@@ -205,3 +205,9 @@ span {
     justify-content: space-between;
   }
 }
+
+@media (width <= 1050px) {
+  .responsive-display {
+    display: none !important;
+  }
+}

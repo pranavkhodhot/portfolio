@@ -9,10 +9,11 @@ const ProjectCard = (props) => {
         src={`projects/${props.details[0]}.png`}
         height={300}
         alt="Project Image"
+        className="responsive-display"
       />
       <Card.Body className="d-flex flex-column">
-        <div className="d-flex justify-content-between">
-          <Card.Title className="mb-0">{props.details[1]}</Card.Title>
+        <div>
+          <Card.Title className="mb-2">{props.details[1]}</Card.Title>
           <small className="text-light">{props.details[2]}</small>
         </div>
         <Card.Text className="mt-2 text-start mt-3 flex-grow-1">{props.details[3]}</Card.Text>

@@ -93,7 +93,7 @@ const Technologies = () => {
             <Button
               key={label}
               variant="flat"
-              className={`px-3 py-2 cursor-pointer lg:px-4 lg:py-3 trans rounded-3 btn-flat ${
+              className={`px-3 py-2 cursor-pointer lg:px-4 lg:py-3 trans rounded-3 btn-flat responsive-display ${
                 activeButton === label ? "active" : ""
               }`}
               onClick={selectedItems}
