@@ -1,4 +1,3 @@
-Portfolio Website
 This is my personal portfolio website showcasing my projects, skills, and experiences. Built with modern web technologies like Vite, React, Bootstrap 5, Framer Motion, and Particles.JS, this site reflects my passion for clean, interactive, and responsive web design.
 
 🚀 Tech Stack
