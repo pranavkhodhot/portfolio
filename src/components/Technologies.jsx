@@ -22,6 +22,7 @@ const Technologies = () => {
     ["NodeJS", "Python", "ExpressJS", "AWS", "C", "C++", "Java"],
     ["Wordpress", "Webflow", "Figma", "Photoshop"],
     ["MongoDB", "MySQL"],
+    ["Cypress","JUnit","Jasmine","Cucumber"],
     ["R", "SAS", "SPSS"],
   ];
 
@@ -43,8 +44,11 @@ const Technologies = () => {
       setCardItems(technologies[2]);
     } else if (type === "Database") {
       setCardItems(technologies[3]);
-    } else if (type === "Data Science") {
+    } else if (type === "Testing") {
+      console.log(technologies[4])
       setCardItems(technologies[4]);
+    } else if (type === "Data Science") {
+      setCardItems(technologies[5]);
     }
   };
 
@@ -88,6 +92,7 @@ const Technologies = () => {
             "Back-End",
             "UI/UX",
             "Database",
+            "Testing",
             "Data Science",
           ].map((label) => (
             <Button
