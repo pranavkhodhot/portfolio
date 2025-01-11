@@ -19,10 +19,10 @@ const Technologies = () => {
       "Framer Motion",
       "SASS",
     ],
-    ["NodeJS", "Python", "ExpressJS", "AWS", "C", "C++", "Java"],
+    ["NodeJS", "Python", "ExpressJS", "AWS", "C", "C++", "Java","Spring Boot"],
     ["Wordpress", "Webflow", "Figma", "Photoshop"],
-    ["MongoDB", "MySQL"],
-    ["Cypress","JUnit","Jasmine","Cucumber"],
+    ["MongoDB", "MySQL","SQLite"],
+    ["Cypress","JUnit","Jasmine","Cucumber","Selenium"],
     ["R", "SAS", "SPSS"],
   ];
 
@@ -114,7 +114,7 @@ const Technologies = () => {
           whileInView="animate"
           variants={hasScrolled ? {} : containerStaggeredAnimation}
           key={activeButton}
-          viewport={{ once: true, amount: 0.2 }}
+          viewport={{ once: true, amount: 0.5 }}
           onViewportEnter={() => setHasScrolled(true)}
         >
           {cardItems.sort().map((name, index) => (
