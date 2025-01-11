@@ -39,7 +39,7 @@ const Experience = () => {
           <ExperienceList experiences={experiences} />
         </div>
       </div>
-      <p className="text-center pt-5">&copy; 2024 Pranav Khodhot. All rights reserved.</p>
+      <p className="text-center pt-5">&copy; 2025 Pranav Khodhot. All rights reserved.</p>
     </section>
   );
 };

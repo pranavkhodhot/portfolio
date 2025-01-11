@@ -5,6 +5,20 @@ import { Col, Row } from "react-bootstrap";
 const Projects = () => {
   const projects = [
     [
+      "QuestGame",
+      "Quest Game Web Application",
+      "September 2024 - December 2024",
+      "Developed interactive Quest Game with a Java + Spring Boot backend and a Node.js frontend, designed to provide an engaging user experience. Project showcases my skills in full-stack development, featuring a robust backend and a dynamic frontend.",
+      "https://github.com/pranavkhodhot/rhythm-rise",
+    ],
+    [
+      "Ecommerce",
+      "Ecommerce Web Application",
+      "November 2024 - December 2024",
+      "Created lightweight E-Commerce Web App with a HTML, CSS, and JavaScript frontend and an Express.js + SQLite3 backend. Project demonstrates a fully functional web app with a clean design, responsive layout, and efficient server-side logic.",
+      "https://github.com/pranavkhodhot/book-store-application",
+    ],
+    [
       "ElectronicStore",
       "Electronic Store Program",
       "March 2022 - April 2022",
@@ -17,20 +31,6 @@ const Projects = () => {
       "November 2023 - December 2023",
       "Simulated the AED process using Qt Creator and C++, employing Gang of Four Design Patterns to ensure robust architecture and design with GUI design",
       "https://github.com/danielvlassov/COMP3004-AED-FINAL",
-    ],
-    [
-      "Lyriks",
-      "Lyriks Music Web App",
-      "February 2024 - March 2024",
-      "Developed a Spotify clone using React and Tailwind, integrated with ShazamCore API for music data, and utilized Redux for state management",
-      "https://github.com/pranavkhodhot/rhythm-rise",
-    ],
-    [
-      "BookList",
-      "Book List Application",
-      "March 2024 - April 2024",
-      "Created a full-stack bookstore application with CRUD operations, featuring a React front end and an Express.js and MongoDB backend for seamless user experience.",
-      "https://github.com/pranavkhodhot/book-store-application",
     ],
   ];
   return (
