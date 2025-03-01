@@ -13,7 +13,7 @@ const Experience = () => {
     {
       image: "icons/Bayshore.jpeg",
       date: "May 2023 - August 2023",
-      title: "QA Intern",
+      title: "QA Automation Engineer Intern",
       companyName: "Bayshore Healthcare",
       description: "Developed automated testing solutions to enhance project stability and data integrity. Integrated secure data management processes and contributed to improving front-end validation and workflow efficiency.",
       inverted: true,

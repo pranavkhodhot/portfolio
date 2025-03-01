@@ -30,6 +30,23 @@
   background-color: rgba(135, 207, 235, 0.703) !important;
 }
 
+.btn-animated {
+  background: transparent;
+  border: 2px solid white;
+  color: white;
+  padding: 12px 24px;
+  font-size: 16px;
+  border-radius: 50px;
+  cursor: pointer;
+}
+
+.card-img {
+  width: 60px;
+  height: 60px;
+  max-width: 60px;
+  transform: translateY(10%);
+}
+
 /* Cardinal Styles */
 .cardinal {
   background-color: rgba(100, 116, 139, 0.1);
@@ -209,5 +226,11 @@ span {
 @media (width <= 1050px) {
   .responsive-display {
     display: none !important;
+  }
+
+  .card-img {
+    width: 50px;
+    height: 50px;
+    transform: translateY(10%);
   }
 }

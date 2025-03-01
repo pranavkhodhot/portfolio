@@ -8,8 +8,9 @@ const Projects = () => {
       "QuestGame",
       "Quest Game Web Application",
       "September 2024 - December 2024",
-      "Developed interactive Quest Game with a Java + Spring Boot backend and a Node.js frontend, designed to provide an engaging user experience. Project showcases my skills in full-stack development, featuring a robust backend and a dynamic frontend.",
+      "Developed interactive Quest Game with a Java + Spring Boot backend and a React + Typescript, designed to provide an engaging user experience. Project showcases my skills in full-stack development, featuring a robust backend and a dynamic frontend.",
       "https://github.com/pranavkhodhot/quest-game",
+      ["React","Typescript","Java","Spring Boot","Selenium","JUnit","Cucumber"]
     ],
     [
       "Ecommerce",
@@ -17,6 +18,7 @@ const Projects = () => {
       "November 2024 - December 2024",
       "Created lightweight E-Commerce Web App with a HTML, CSS, and JavaScript frontend and an Express.js + SQLite3 backend. Project demonstrates a fully functional web app with a clean design, responsive layout, and efficient server-side logic.",
       "https://github.com/pranavkhodhot/ecommerce-web-app",
+      ["HTML","CSS","Javascript","ExpressJS","SQLite"]
     ],
     [
       "ElectronicStore",
@@ -24,6 +26,8 @@ const Projects = () => {
       "March 2022 - April 2022",
       "Simulated electronic store transactions using Java and JavaFX, incorporating OOP principles like inheritance and polymorphism to enhance reusability and maintainability",
       "https://github.com/pranavkhodhot/electronic-store-app",
+      ["Java","JavaFX"]
+
     ],
     [
       "AED",
@@ -31,6 +35,8 @@ const Projects = () => {
       "November 2023 - December 2023",
       "Simulated the AED process using Qt Creator and C++, employing Gang of Four Design Patterns to ensure robust architecture and design with GUI design",
       "https://github.com/danielvlassov/COMP3004-AED-FINAL",
+      ["C++","Qt"]
+
     ],
   ];
   return (

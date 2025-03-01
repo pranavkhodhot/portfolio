@@ -2,6 +2,7 @@ import React from "react";
 import Button from "react-bootstrap/Button";
 import Container from "react-bootstrap/Container";
 import { motion } from "framer-motion";
+import AnimatedButton from "./subcomponents/AnimatedButton";
 const Hero = () => {
   return (
     <>
@@ -17,9 +18,7 @@ const Hero = () => {
           <h6 className="lead pb-2">
             A software developer and web designer
           </h6>
-          <Button variant="primary" href="Pranav_Khodhot___Resume.pdf" download>
-            Download My Resume
-          </Button>
+          <AnimatedButton text="Download My Resume"/>
         </Container>
       </div>
     </>
