@@ -3,28 +3,36 @@ import ExperienceList from './subcomponents/ExperienceList'
 const Experience = () => {
   const experiences = [
     {
-      image: "icons/Bayshore.jpeg",
-      date: "Jan 2024 - August 2024",
-      title: "Web Developer Intern",
-      companyName: "Bayshore Healthcare",
+      image: "icons/Appfabs.png",
+      date: "May 2025 - Current",
+      title: "Full Stack Developer",
+      companyName: "AppFabs Inc",
       description: "Contributed to front-end development, user interface design, and website creation leading to improving project functionality and overall user experience.",
       inverted: false,
     },
     {
       image: "icons/Bayshore.jpeg",
+      date: "Jan 2024 - August 2024",
+      title: "Web Developer Intern",
+      companyName: "Bayshore Healthcare Ltd",
+      description: "Contributed to front-end development, user interface design, and website creation leading to improving project functionality and overall user experience.",
+      inverted: true,
+    },
+    {
+      image: "icons/Bayshore.jpeg",
       date: "May 2023 - August 2023",
       title: "QA Automation Engineer Intern",
-      companyName: "Bayshore Healthcare",
+      companyName: "Bayshore Healthcare Ltd",
       description: "Developed automated testing solutions to enhance project stability and data integrity. Integrated secure data management processes and contributed to improving front-end validation and workflow efficiency.",
-      inverted: true,
+      inverted: false,
     },
     {
       image: "icons/Bayshore.jpeg",
       date: "May 2022 - August 2022",
       title: "Software Developer Intern",
-      companyName: "Bayshore Healthcare",
+      companyName: "Bayshore Healthcare Ltd",
       description: "Contributed to front-end design and back-end testing, improving user communication and system functionality. Collaborated with teams to streamline project management and enhance development efficiency.",
-      inverted: false,
+      inverted: true,
     },
   ];
 

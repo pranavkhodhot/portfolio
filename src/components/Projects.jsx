@@ -18,7 +18,7 @@ const Projects = () => {
       "November 2024 - December 2024",
       "Created lightweight E-Commerce Web App with a HTML, CSS, and JavaScript frontend and an Express.js + SQLite3 backend. Project demonstrates a fully functional web app with a clean design, responsive layout, and efficient server-side logic.",
       "https://github.com/pranavkhodhot/ecommerce-web-app",
-      ["HTML","CSS","Javascript","ExpressJS","SQLite"]
+      ["Angular","Typescript","Tailwind","ExpressJS","Prisma","MySQL","Playwright"]
     ],
     [
       "ElectronicStore",
