@@ -7,7 +7,7 @@ const Experience = () => {
       date: "May 2025 - Current",
       title: "Full Stack Developer",
       companyName: "AppFabs Inc",
-      description: "Contributed to front-end development, user interface design, and website creation leading to improving project functionality and overall user experience.",
+      description: "Designed and developed a responsive ReactJS web application with Docker-based containerization, streamlining the deployment process. Integrated backend APIs with frontend components to enable real-time data rendering and deliver a seamless user experience across dynamic dashboard views.",
       inverted: false,
     },
     {

@@ -137,6 +137,13 @@
   cursor: pointer;
 }
 
+.socials-container {
+  display: flex;
+  gap: 20px;
+  padding: 15px;
+  justify-content: center;
+}
+
 .box-wrapper {
   position: relative;
   background: linear-gradient(to right, red, purple);

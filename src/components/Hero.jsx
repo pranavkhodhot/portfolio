@@ -3,6 +3,7 @@ import Button from "react-bootstrap/Button";
 import Container from "react-bootstrap/Container";
 import { motion } from "framer-motion";
 import AnimatedButton from "./subcomponents/AnimatedButton";
+import IconLinkButton from "./subcomponents/IconLinkButton";
 const Hero = () => {
   return (
     <>
@@ -18,7 +19,11 @@ const Hero = () => {
           <h6 className="lead pb-2">
             A software developer and web designer
           </h6>
-          <AnimatedButton text="Download My Resume"/>
+          <div className="socials-container">
+            <IconLinkButton iconName="Github" link="https://github.com/pranavkhodhot" />
+            <IconLinkButton iconName="Linkedin" link="https://linkedin.com/in/pranavkhodhot" />
+            <IconLinkButton iconName="Email" link="mailto:pranavkhodhot@gmail.com" />
+          </div>
         </Container>
       </div>
     </>
