@@ -4,7 +4,7 @@ const Experience = () => {
   const experiences = [
     {
       image: "icons/Appfabs.png",
-      date: "May 2025 - Current",
+      date: "May 2025 - August 2025",
       title: "Full Stack Developer",
       companyName: "AppFabs Inc",
       description: "Designed and developed a responsive ReactJS web application with Docker-based containerization, streamlining the deployment process. Integrated backend APIs with frontend components to enable real-time data rendering and deliver a seamless user experience across dynamic dashboard views.",

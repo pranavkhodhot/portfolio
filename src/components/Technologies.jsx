@@ -18,9 +18,10 @@ const Technologies = () => {
       "Vite",
       "Framer Motion",
       "SASS",
-      "Angular"
+      "Angular",
+      "NextJS"
     ],
-    ["NodeJS", "Python", "ExpressJS", "AWS", "C", "C++", "Java","Spring Boot"],
+    ["NodeJS", "Python", "ExpressJS", "AWS", "C", "C++", "Java","Spring Boot","FastAPI"],
     ["Wordpress", "Webflow", "Figma", "Photoshop"],
     ["MongoDB", "MySQL","SQLite", "Prisma"],
     ["Cypress","JUnit","Jasmine","Cucumber","Selenium","Playwright"],
