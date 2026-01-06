@@ -28,7 +28,7 @@ const Experience = () => {
     },
     {
       image: "icons/Bayshore.jpeg",
-      date: "May 2022 - August 2022",
+      date: "June 2022 - August 2022",
       title: "Software Developer Intern",
       companyName: "Bayshore Healthcare Ltd",
       description: "Contributed to front-end design and back-end testing, improving user communication and system functionality. Collaborated with teams to streamline project management and enhance development efficiency.",
