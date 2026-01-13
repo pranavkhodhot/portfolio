@@ -13,6 +13,23 @@
 }
 
 /* Button Styles */
+.category-btn {
+  color: white;
+  border-color: white;
+  transition: all 0.2s ease-in-out;
+}
+
+.category-btn:hover {
+  background-color: rgba(92, 92, 92, 0.46);
+  color: white;
+}
+
+.category-btn-active {
+  background-color: #f72585 !important;
+  border-color: #f72585 !important;
+  color: white !important;
+}
+
 .btn-flat {
   background-color: rgb(93, 93, 241) !important;
   color: white !important;
@@ -158,6 +175,7 @@ span {
   background: -webkit-linear-gradient(red, purple);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+  background-clip: text;
 }
 
 #tsparticles {

@@ -1,142 +1,115 @@
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 import Card from "./subcomponents/Card";
-import Container from "react-bootstrap/Container";
-import Row from "react-bootstrap/Row";
-import Col from "react-bootstrap/Col";
-import { Button, ButtonGroup } from "react-bootstrap";
-import { motion } from "framer-motion";
+import { Container, Button, ButtonGroup } from "react-bootstrap";
+import { motion, AnimatePresence } from "framer-motion";
+
+const techData = {
+  "Front-End": [
+    "React",
+    "CSS",
+    "Javascript",
+    "Typescript",
+    "Bootstrap",
+    "Tailwind",
+    "Vite",
+    "Framer Motion",
+    "SASS",
+    "Angular",
+    "Next",
+  ],
+  "Back-End": [
+    "NodeJS",
+    "Python",
+    "ExpressJS",
+    "AWS",
+    "C",
+    "C++",
+    "Java",
+    "Spring Boot",
+    "FastAPI",
+  ],
+  "UI/UX": ["Wordpress", "Webflow", "Figma", "Photoshop"],
+  Database: ["MongoDB", "MySQL", "SQLite", "Prisma"],
+  Testing: [
+    "Cypress",
+    "JUnit",
+    "Jasmine",
+    "Cucumber",
+    "Selenium",
+    "Playwright",
+  ],
+  "Data Science": ["R", "SAS", "SPSS"],
+};
 
 const Technologies = () => {
-  const technologies = [
-    [
-      "React",
-      "CSS",
-      "Javascript",
-      "Typescript",
-      "Bootstrap",
-      "Tailwind",
-      "Vite",
-      "Framer Motion",
-      "SASS",
-      "Angular",
-      "NextJS"
-    ],
-    ["NodeJS", "Python", "ExpressJS", "AWS", "C", "C++", "Java","Spring Boot","FastAPI"],
-    ["Wordpress", "Webflow", "Figma", "Photoshop"],
-    ["MongoDB", "MySQL","SQLite", "Prisma"],
-    ["Cypress","JUnit","Jasmine","Cucumber","Selenium","Playwright"],
-    ["R", "SAS", "SPSS"],
-  ];
+  const [filter, setFilter] = useState("All");
 
-  const [cardItems, setCardItems] = useState(technologies.flat());
-  const [activeButton, setActiveButton] = useState("All");
-  const [hasScrolled, setHasScrolled] = useState(false);
-
-  const selectedItems = (event) => {
-    const type = event.target.innerHTML;
-    setActiveButton(type);
-    setHasScrolled(true);
-    if (type === "All") {
-      setCardItems(technologies.flat());
-    } else if (type === "Front-End") {
-      setCardItems(technologies[0]);
-    } else if (type === "Back-End") {
-      setCardItems(technologies[1]);
-    } else if (type === "UI/UX") {
-      setCardItems(technologies[2]);
-    } else if (type === "Database") {
-      setCardItems(technologies[3]);
-    } else if (type === "Testing") {
-      console.log(technologies[4])
-      setCardItems(technologies[4]);
-    } else if (type === "Data Science") {
-      setCardItems(technologies[5]);
-    }
+  const getFilteredItems = () => {
+    if (filter === "All") return Object.values(techData).flat().sort();
+    return techData[filter].sort();
   };
 
-  const fadeInAnimation = {
-    initial: {
-      opacity: 0,
-      y: 100,
-    },
-    animate: {
-      opacity: 1,
-      y: 0,
-      transition: {
-        duration: 0.5,
-      },
-    },
-  };
-
-  const containerStaggeredAnimation = {
-    initial: {},
-    animate: {
-      transition: {
-        staggerChildren: 0.1,
-      },
-    },
-  };
+  const categories = ["All", ...Object.keys(techData)];
 
   return (
-    <div className="position-relative z-1" id="technologies">
-      <h1 className="display-4 text-center mt-1 pt-5 fw-bold">Technologies</h1>
-      <Container
-        className="d-flex justify-content-center flex-column my-5"
-        style={{ maxWidth: "60%" }}
-      >
-        <ButtonGroup
-          variant="flat"
-          className="d-flex flex-wrap justify-content-center gap-2 mb-5"
+    <section
+      className="py-5 text-white position-relative"
+      id="technologies"
+      style={{ zIndex: 5 }}
+    >
+      <Container>
+        <h1
+          className="display-4 text-center my-5 fw-bold text-white"
+          style={{
+            opacity: 1,
+            visibility: "visible",
+            position: "relative",
+            zIndex: 10,
+          }}
         >
-          {[
-            "All",
-            "Front-End",
-            "Back-End",
-            "UI/UX",
-            "Database",
-            "Testing",
-            "Data Science",
-          ].map((label) => (
-            <Button
-              key={label}
-              variant="flat"
-              className={`px-3 py-2 cursor-pointer lg:px-4 lg:py-3 trans rounded-3 btn-flat responsive-display ${
-                activeButton === label ? "active" : ""
-              }`}
-              onClick={selectedItems}
-            >
-              {label}
-            </Button>
-          ))}
-        </ButtonGroup>
-        <Row
-          className="g-4"
-          as={motion.div}
-          initial="initial"
-          whileInView="animate"
-          variants={hasScrolled ? {} : containerStaggeredAnimation}
-          key={activeButton}
-          viewport={{ once: true, amount: 0.5 }}
-          onViewportEnter={() => setHasScrolled(true)}
+          Technologies
+        </h1>
+
+        {/* 2. Filter Buttons */}
+        <div className="d-flex justify-content-center mb-5">
+          <ButtonGroup className="flex-wrap justify-content-center gap-2">
+            {categories.map((cat) => (
+              <Button
+                key={cat}
+                className={`rounded-pill px-4 shadow-sm category-btn ${
+                  filter === cat ? "category-btn-active" : ""
+                }`}
+                variant="outline-light"
+                onClick={() => setFilter(cat)}
+              >
+                {cat}
+              </Button>
+            ))}
+          </ButtonGroup>
+        </div>
+
+        {/* 3. Animated Grid */}
+        <motion.div
+          layout
+          className="d-flex flex-wrap justify-content-center gap-4"
         >
-          {cardItems.sort().map((name, index) => (
-            <Col
-              key={index}
-              xs={6}
-              sm={5}
-              md={4}
-              lg={3}
-              xl={2}
-              className="d-flex justify-content-center"
-              as={motion.div}
-              variants={fadeInAnimation}
-            >
-              <Card name={name} />
-            </Col>
-          ))}
-        </Row>
+          <AnimatePresence mode="popLayout">
+            {getFilteredItems().map((name) => (
+              <motion.div
+                key={name}
+                layout
+                initial={{ opacity: 0, scale: 0.8 }}
+                animate={{ opacity: 1, scale: 1 }}
+                exit={{ opacity: 0, scale: 0.8 }}
+                transition={{ duration: 0.3 }}
+              >
+                <Card name={name} />
+              </motion.div>
+            ))}
+          </AnimatePresence>
+        </motion.div>
       </Container>
-    </div>
+    </section>
   );
 };
 

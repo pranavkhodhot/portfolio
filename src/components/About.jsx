@@ -7,7 +7,7 @@ import { motion } from "framer-motion";
 const About = () => {
   return (
     <div
-      className="py-5 d-flex flex-column align-items-center justify-content-center min-height my-5 position-relative z-1"
+      className="py-5 d-flex flex-column align-items-center justify-content-center min-height my-5 position-relative"
       id="about-me"
     >
       <Container
