@@ -20,10 +20,19 @@ function App() {
               <Hero />
               <About />
               <Technologies />
-              <Projects />
+              <Projects all={true}/>
               <Experience></Experience>
             </div>
           </>
+        }
+      ></Route>
+      <Route
+        path="/projects"
+        element={
+          <div className="text-white">
+            <ParticlesBackground />
+            <Projects />
+          </div>
         }
       ></Route>
     </Routes>

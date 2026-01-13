@@ -9,9 +9,8 @@ const ProjectCard = (props) => {
       <Card.Img
         variant="top"
         src={`projects/${props.details[0]}`}
-        height={300}
         alt="Project Image"
-        className="responsive-display"
+        className="project-img"
       />
       <Card.Body className="d-flex flex-column">
         <div className="pb-3">
