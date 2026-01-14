@@ -12,7 +12,7 @@ const Projects = (props) => {
       "August 2025 - January 2026",
       "Developed an intelligent Expense Tracker web application with a FastAPI backend and a Next.js + TypeScript frontend, designed to help users manage budgets, track expenses, and gain AI-powered financial insights. The project showcases full-stack development expertise, secure authentication, and a machine learning.",
       "https://github.com/pranavkhodhot/expense-tracker-app",
-      ["Next","Typescript","Python","FastAPI","SQLite","Tailwind","scikit-learn"]
+      ["Next","Typescript","Python","FastAPI","PostgreSQL","Tailwind","scikit-learn"]
     ],
     [
       "Ecommerce.gif",
@@ -62,7 +62,7 @@ const Projects = (props) => {
 
   const displayedProjects = props.all ? projects.slice(0,4) : [...projects]
   const text = props.all ? "View All Projects"  : "Back to Main"
-  const href = props.all ? "/projects" : "/"
+  const href = props.all ? "/projects" : "/#projects"
   return (
     <div
       className="py-5 my-5 d-flex flex-column align-items-center justify-content-center position-relative z-1"

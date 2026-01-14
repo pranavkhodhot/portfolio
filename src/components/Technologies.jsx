@@ -12,16 +12,16 @@ const techData = {
     "Bootstrap",
     "Tailwind",
     "Vite",
-    "Framer Motion",
+    "Framer",
     "SASS",
     "Angular",
     "Next",
+    "ThreeJS"
   ],
   "Back-End": [
     "NodeJS",
     "Python",
     "ExpressJS",
-    "AWS",
     "C",
     "C++",
     "Java",
@@ -29,16 +29,19 @@ const techData = {
     "FastAPI",
   ],
   "UI/UX": ["Wordpress", "Webflow", "Figma", "Photoshop"],
-  Database: ["MongoDB", "MySQL", "SQLite", "Prisma"],
-  Testing: [
+  Database: ["MongoDB", "MySQL", "SQLite", "Prisma","PostgreSQL", "SQLAlchemy"],
+  "Devops/QA": [
     "Cypress",
     "JUnit",
     "Jasmine",
     "Cucumber",
     "Selenium",
     "Playwright",
+    "AWS",
+    "Docker",
+    "Github",
   ],
-  "Data Science": ["R", "SAS", "SPSS"],
+  "Machine Learning": ["R", "scikit-learn", "Prophet", "Jupyter"],
 };
 
 const Technologies = () => {
