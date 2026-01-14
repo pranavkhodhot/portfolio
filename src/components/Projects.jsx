@@ -2,6 +2,8 @@ import React from "react";
 import Container from "react-bootstrap/Container";
 import ProjectCard from "./subcomponents/ProjectCard";
 import { Col, Row } from "react-bootstrap";
+import AnimatedButton from "./subcomponents/AnimatedButton";
+
 const Projects = (props) => {
   const projects = [
     [
@@ -59,6 +61,8 @@ const Projects = (props) => {
   ];
 
   const displayedProjects = props.all ? projects.slice(0,4) : [...projects]
+  const text = props.all ? "View All Projects"  : "Back to Main"
+  const href = props.all ? "/projects" : "/"
   return (
     <div
       className="py-5 my-5 d-flex flex-column align-items-center justify-content-center position-relative z-1"
@@ -77,6 +81,7 @@ const Projects = (props) => {
           ))}
         </Row>
       </Container>
+      <AnimatedButton text={text} href={href}></AnimatedButton>
     </div>
   );
 };

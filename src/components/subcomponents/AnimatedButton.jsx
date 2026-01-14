@@ -1,9 +1,9 @@
 import { motion } from "framer-motion";
 import "bootstrap/dist/css/bootstrap.min.css";
 
-const AnimatedButton = ({ text }) => {
+const AnimatedButton = ({ text, href }) => {
   return (
-    <a href="Pranav_Khodhot_Resume.pdf" download>
+    <a className="mt-5" href={href}>
       <motion.button
         whileHover={{
           borderWidth: "4px",
