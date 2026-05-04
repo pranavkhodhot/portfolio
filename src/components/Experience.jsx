@@ -3,12 +3,20 @@ import ExperienceList from './subcomponents/ExperienceList'
 const Experience = () => {
   const experiences = [
     {
+      image: "icons/MethodCRM.png",
+      date: "March 2025 - Present",
+      title: "QA Engineer",
+      companyName: "Method CRM",
+      description: "Designed and developed a responsive ReactJS web application with Docker-based containerization, streamlining the deployment process. Integrated backend APIs with frontend components to enable real-time data rendering and deliver a seamless user experience across dynamic dashboard views.",
+      inverted: false,
+    },
+    {
       image: "icons/Appfabs.png",
       date: "May 2025 - August 2025",
       title: "Full Stack Developer",
       companyName: "AppFabs Inc",
       description: "Designed and developed a responsive ReactJS web application with Docker-based containerization, streamlining the deployment process. Integrated backend APIs with frontend components to enable real-time data rendering and deliver a seamless user experience across dynamic dashboard views.",
-      inverted: false,
+      inverted: true,
     },
     {
       image: "icons/Bayshore.jpeg",
@@ -16,7 +24,7 @@ const Experience = () => {
       title: "Web Developer Intern",
       companyName: "Bayshore Healthcare Ltd",
       description: "Contributed to front-end development, user interface design, and website creation leading to improving project functionality and overall user experience.",
-      inverted: true,
+      inverted: false,
     },
     {
       image: "icons/Bayshore.jpeg",
@@ -24,7 +32,7 @@ const Experience = () => {
       title: "QA Automation Engineer Intern",
       companyName: "Bayshore Healthcare Ltd",
       description: "Developed automated testing solutions to enhance project stability and data integrity. Integrated secure data management processes and contributed to improving front-end validation and workflow efficiency.",
-      inverted: false,
+      inverted: true,
     },
     {
       image: "icons/Bayshore.jpeg",
@@ -32,7 +40,7 @@ const Experience = () => {
       title: "Software Developer Intern",
       companyName: "Bayshore Healthcare Ltd",
       description: "Contributed to front-end design and back-end testing, improving user communication and system functionality. Collaborated with teams to streamline project management and enhance development efficiency.",
-      inverted: true,
+      inverted: false,
     },
   ];
 

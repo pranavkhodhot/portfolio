@@ -7,11 +7,11 @@ import AnimatedButton from "./subcomponents/AnimatedButton";
 const Projects = (props) => {
   const projects = [
     [
-      "ExpenseTracker.png",
-      "Expense Tracker Application",
+      "FinanceTracker.png",
+      "Finance Tracker Application",
       "August 2025 - January 2026",
       "Developed an intelligent Expense Tracker web application with a FastAPI backend and a Next.js + TypeScript frontend, designed to help users manage budgets, track expenses, and gain AI-powered financial insights. The project showcases full-stack development expertise, secure authentication, and a machine learning.",
-      "https://github.com/pranavkhodhot/expense-tracker-app",
+      "https://github.com/pranavkhodhot/finance-tracker-app",
       ["Next","Typescript","Python","FastAPI","PostgreSQL","Tailwind","scikit-learn"]
     ],
     [
